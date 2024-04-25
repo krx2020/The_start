@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <title>WEB3 - JavaScript</title>
     <meta charset="utf-8">
     <style>
+        body{
+            margin: 0;
+        }
         a{
             color:midnightblue;
             text-decoration: none;
@@ -19,29 +21,57 @@
         ol{
             border-right: 1px gray solid;
             width: 100px;
-            height: 400px;
             margin: 0;
             padding: 20px;
+        }
+        #contants{
+            text-align: center;
+        }
+        #split ol{
+            padding-left: 33px;
+        }
+        #split{
+            display: grid;
+            grid-template-columns: 170px 1fr;
+        }
+        #article{
+            padding-left: 10px;
+        }
+        @media(max-width:800px){
+            #split{
+            display: block;
+            }
+            ol{
+            border-right: none;
+            }
+            h1{
+                border-bottom: none;
+            }
         }
     </style>
 </head>
 
 <body>
-    <h1><a href="index.html">Portfolio</h1></a>
-<ol>
-    <li><a href="1.html">Who am I?</li></a>
-    <li><a href="2.html">Like Moment</li></a>
-    <li><a href="3.html">JavaScript</li></a>
-</ol>
-<h2>JavaScript</h2>
-<p>JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language and core technology of the Web, 
-alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.
-JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. 
-It has dynamic typing, prototype-based object-orientation, and first-class functions. 
-It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. 
-It has application programming interfaces (APIs) for working with text, dates, regular expressions, 
-standard data structures, and the Document Object Model (DOM).
-</p>
+<h1><a href="index.html">Portfolio</h1></a>
+<div id="split">
+    <ol>
+        <li><a href="1.html">Who am I?</li></a>
+        <li><a href="2.html">Like Moment</li></a>
+        <li><a href="3.html">JavaScript</li></a>
+    </ol>
+    <div id="article">
+    <h2>JavaScript</h2>
+    <p>JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language and core technology of the Web, 
+    alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.
+    JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. 
+    It has dynamic typing, prototype-based object-orientation, and first-class functions. 
+    It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. 
+    It has application programming interfaces (APIs) for working with text, dates, regular expressions, 
+    standard data structures, and the Document Object Model (DOM).
+    </p>
+    </div>
+</div>
+
 <p><div id="disqus_thread"></div>
     <script>
         /**
@@ -64,8 +94,11 @@ standard data structures, and the Document Object Model (DOM).
 </p>
 
 </body>
+<span id="contants">
 <p><strong><a href="https://www.youtube.com/channel/UCggVNs-cnUO3NWcqPScVvyw" target="_blank" title="Youtube Link">Contact</a></strong>
     <strong><a href="https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%20%EC%9B%94%ED%8F%89%EB%8F%99/address/14177383.2919729,4349535.8755073,%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%
 EA%B5%AC%20%EC%9B%94%ED%8F%89%EB%8F%99,jibun?c=13.00,0,0,2,dh&isCorrectAnswer=true" target="_blank" title="네이버 지도 link">Location</a></strong>
 </p>
+</span>
+
 </html>

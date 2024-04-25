@@ -11,12 +11,6 @@
             color:midnightblue;
             text-decoration: none;
         }
-        .saw{
-            color:aqua;
-        }
-        #active{
-            color:red;
-        }
         h1{
             font-size: 60px; 
             text-align: center;
@@ -27,17 +21,32 @@
         ol{
             border-right: 1px gray solid;
             width: 100px;
-            height: 400px;
             margin: 0;
             padding: 20px;
+        }
+        #contants{
+            text-align: center;
+        }
+        #split ol{
+            padding-left: 33px;
         }
         #split{
             display: grid;
             grid-template-columns: 170px 1fr;
-
         }
-        #contants{
-            text-align: center;
+        #article{
+            padding-left: 10px;
+        }
+        @media(max-width:800px){
+            #split{
+            display: block;
+            }
+            ol{
+            border-right: none;
+            }
+            h1{
+                border-bottom: none;
+            }
         }
     </style>
 </head>
@@ -45,19 +54,19 @@
 <body>
     <h1><a href="index.html">Portfolio</h1></a>
 <div id="split">
-<ol>
-    <li><a href="1.html" class = "saw">Who am I?</li></a>
-    <li><a href="2.html" class = "saw" id = 'active'>Like Moment</li></a>
-    <li><a href="3.html">JavaScript</li></a>
-</ol>
-<div>
-    <h2>Like Moment</h2>
-    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/N4eH0Ui5YVQ?si=cafBckYxBvqGC6pV" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-     allowfullscreen></iframe></p>
-    <p>This is the moment that I really like</p>
-</div>
+    <ol>
+        <li><a href="1.html">Who am I?</li></a>
+        <li><a href="2.html" id = 'active'>Like Moment</li></a>
+        <li><a href="3.html">JavaScript</li></a>
+    </ol>
+    <div id="article">
+        <h2>Like Moment</h2>
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/N4eH0Ui5YVQ?si=cafBckYxBvqGC6pV" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe></p>
+        <p>This is the moment that I really like</p>
+    </div>
 </div>
 <p>
     <div id="disqus_thread"></div>
